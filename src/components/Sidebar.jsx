@@ -1,16 +1,21 @@
 import { Box, VStack, Text } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 import { FaTachometerAlt, FaBell, FaListAlt, FaTools, FaUser, FaBook, FaChartLine, FaTasks } from "react-icons/fa";
 
 function Sidebar() {
   return (
     <Box as="nav" w="250px" p="4" bg="gray.800" color="white" position="fixed" h="100vh">
       <VStack align="start" spacing="4">
-        <Text fontSize="xl" fontWeight="bold">
-          Dashboard
-        </Text>
-        <Text fontSize="xl" fontWeight="bold">
-          Reminders
-        </Text>
+        <Link to="/">
+          <Text fontSize="xl" fontWeight="bold">
+            Dashboard
+          </Text>
+        </Link>
+        <Link to="/reminders">
+          <Text fontSize="xl" fontWeight="bold">
+            Reminders
+          </Text>
+        </Link>
         <Text fontSize="xl" fontWeight="bold">
           Modes
         </Text>

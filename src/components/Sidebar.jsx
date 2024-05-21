@@ -36,12 +36,16 @@ function Sidebar() {
         <Text fontSize="xl" fontWeight="bold">
           Blog
         </Text>
-        <Text fontSize="xl" fontWeight="bold">
-          Personal Development
-        </Text>
-        <Text fontSize="xl" fontWeight="bold">
-          Performance
-        </Text>
+        <Link to="/personal-development">
+          <Text fontSize="xl" fontWeight="bold">
+            Personal Development
+          </Text>
+        </Link>
+        <Link to="/performance-metrics">
+          <Text fontSize="xl" fontWeight="bold">
+            Performance
+          </Text>
+        </Link>
         <Text fontSize="xl" fontWeight="bold">
           Task Management
         </Text>

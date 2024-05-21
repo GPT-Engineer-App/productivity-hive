@@ -1,6 +1,6 @@
 import { Box, VStack, Text } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
-import { FaTachometerAlt, FaBell, FaListAlt, FaTools, FaUser, FaBook, FaChartLine, FaTasks } from "react-icons/fa";
+import { FaTachometerAlt, FaBell, FaListAlt, FaTools, FaUser, FaBook, FaChartLine, FaTasks, FaLightbulb, FaComments } from "react-icons/fa";
 
 function Sidebar() {
   return (
@@ -21,34 +21,46 @@ function Sidebar() {
             Modes
           </Text>
         </Link>
-        <Text fontSize="xl" fontWeight="bold">
-          Support Tools
-        </Text>
-        <Text fontSize="xl" fontWeight="bold">
-          Work Assistant
-        </Text>
-        <Text fontSize="xl" fontWeight="bold">
-          Learning Assistant
-        </Text>
-        <Text fontSize="xl" fontWeight="bold">
-          Recommendations
-        </Text>
-        <Text fontSize="xl" fontWeight="bold">
-          Blog
-        </Text>
+        <Link to="/support-tools">
+          <Text fontSize="xl" fontWeight="bold">
+            <FaTools /> Support Tools
+          </Text>
+        </Link>
+        <Link to="/work-assistant">
+          <Text fontSize="xl" fontWeight="bold">
+            <FaTasks /> Work Assistant
+          </Text>
+        </Link>
+        <Link to="/learning-assistant">
+          <Text fontSize="xl" fontWeight="bold">
+            <FaBook /> Learning Assistant
+          </Text>
+        </Link>
+        <Link to="/recommendations">
+          <Text fontSize="xl" fontWeight="bold">
+            <FaLightbulb /> Recommendations
+          </Text>
+        </Link>
+        <Link to="/blog">
+          <Text fontSize="xl" fontWeight="bold">
+            <FaComments /> Blog
+          </Text>
+        </Link>
         <Link to="/personal-development">
           <Text fontSize="xl" fontWeight="bold">
-            Personal Development
+            <FaUser /> Personal Development
           </Text>
         </Link>
         <Link to="/performance-metrics">
           <Text fontSize="xl" fontWeight="bold">
-            Performance
+            <FaChartLine /> Performance
           </Text>
         </Link>
-        <Text fontSize="xl" fontWeight="bold">
-          Task Management
-        </Text>
+        <Link to="/task-management">
+          <Text fontSize="xl" fontWeight="bold">
+            <FaTasks /> Task Management
+          </Text>
+        </Link>
       </VStack>
     </Box>
   );

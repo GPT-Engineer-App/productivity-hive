@@ -7,17 +7,22 @@ const Index = () => {
       <VStack spacing={6} align="stretch">
         {/* Header */}
         <HStack justifyContent="space-between" alignItems="center">
-          <Heading as="h1" size="lg">
-            Business Dashboard
-          </Heading>
-          <HStack spacing={4}>
-            <IconButton aria-label="Notifications" icon={<FaBell />} />
-            <IconButton aria-label="Settings" icon={<FaCog />} />
-            <Image borderRadius="full" boxSize="40px" src="https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxlbXBsb3llZSUyMHBvcnRyYWl0fGVufDB8fHx8MTcxNjMxODc0M3ww&ixlib=rb-4.0.3&q=80&w=1080" alt="Profile" />
+          <HStack spacing={4} w="full" justifyContent="space-between">
+            <Heading as="h1" size="lg">
+              Business Dashboard
+            </Heading>
+            <InputGroup w="40%">
+              <InputLeftElement pointerEvents="none" children={<FaSearch />} />
+              <Input type="text" placeholder="Search..." />
+            </InputGroup>
+            <HStack spacing={4}>
+              <IconButton aria-label="Notifications" icon={<FaBell />} />
+              <IconButton aria-label="Settings" icon={<FaCog />} />
+              <Image borderRadius="full" boxSize="40px" src="https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxlbXBsb3llZSUyMHBvcnRyYWl0fGVufDB8fHx8MTcxNjMxODc0M3ww&ixlib=rb-4.0.3&q=80&w=1080" alt="Profile" />
+            </HStack>
           </HStack>
         </HStack>
-
-        {/* Main Content */}
+        {}
         <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={6}>
           {/* Productivity Stats */}
           <Box p={4} borderWidth="1px" borderRadius="lg">

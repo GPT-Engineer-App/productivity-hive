@@ -1,5 +1,5 @@
-import { Container, VStack, HStack, Box, Text, Heading, IconButton, Image, Progress, SimpleGrid, Divider } from "@chakra-ui/react";
-import { FaChartLine, FaTasks, FaUser, FaBell, FaCog } from "react-icons/fa";
+import { Container, VStack, HStack, Box, Text, Heading, IconButton, Image, Progress, SimpleGrid, Divider, Input, InputGroup, InputLeftElement, Button } from "@chakra-ui/react";
+import { FaChartLine, FaTasks, FaUser, FaBell, FaCog, FaSearch, FaWater, FaRunning, FaEye, FaWind, FaVolumeUp, FaLightbulb, FaBrain, FaComments, FaClock } from "react-icons/fa";
 
 const Index = () => {
   return (

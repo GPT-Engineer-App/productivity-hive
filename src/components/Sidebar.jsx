@@ -16,9 +16,11 @@ function Sidebar() {
             Reminders
           </Text>
         </Link>
-        <Text fontSize="xl" fontWeight="bold">
-          Modes
-        </Text>
+        <Link to="/modes">
+          <Text fontSize="xl" fontWeight="bold">
+            Modes
+          </Text>
+        </Link>
         <Text fontSize="xl" fontWeight="bold">
           Support Tools
         </Text>

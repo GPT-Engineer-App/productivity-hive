@@ -1,4 +1,4 @@
-import { Box, VStack, Text, IconButton } from "@chakra-ui/react";
+import { Box, VStack, Text, IconButton, HStack } from "@chakra-ui/react";
 import { useEffect } from "react";
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
@@ -17,63 +17,96 @@ function Sidebar() {
   }, [isCollapsed]);
 
   return (
-    <Box as="nav" w={isCollapsed ? "60px" : "250px"} p="4" bg="gray.800" color="white" position="fixed" h="100vh" left="0" transition="width 0.3s">
+    <Box as="nav" w={isCollapsed ? "60px" : "250px"} p="4" bg="gray.800" color="white" position="fixed" h="100vh" left="0" transition="width 0.3s" overflowY="auto">
       <IconButton icon={isCollapsed ? <FaBars /> : <FaTimes />} onClick={toggleSidebar} colorScheme="teal" variant="outline" aria-label="Toggle Sidebar" mb={4} tabIndex="0" />
       <VStack align="start" spacing="4">
         <Link to="/" _hover={{ color: "teal.300" }} tabIndex="0" aria-label="Dashboard">
-          <Text fontSize="xl" fontWeight="bold" display={isCollapsed ? "none" : "block"}>
-            Dashboard
-          </Text>
+          <HStack>
+            <FaTachometerAlt />
+            <Text fontSize="xl" fontWeight="bold" display={isCollapsed ? "none" : "block"}>
+              Dashboard
+            </Text>
+          </HStack>
         </Link>
         <Link to="/reminders" _hover={{ color: "teal.300" }} tabIndex="0" aria-label="Reminders">
-          <Text fontSize="xl" fontWeight="bold" display={isCollapsed ? "none" : "block"}>
-            Reminders
-          </Text>
+          <HStack>
+            <FaBell />
+            <Text fontSize="xl" fontWeight="bold" display={isCollapsed ? "none" : "block"}>
+              Reminders
+            </Text>
+          </HStack>
         </Link>
         <Link to="/modes" _hover={{ color: "teal.300" }} tabIndex="0" aria-label="Modes">
-          <Text fontSize="xl" fontWeight="bold" display={isCollapsed ? "none" : "block"}>
-            Modes
-          </Text>
+          <HStack>
+            <FaListAlt />
+            <Text fontSize="xl" fontWeight="bold" display={isCollapsed ? "none" : "block"}>
+              Modes
+            </Text>
+          </HStack>
         </Link>
         <Link to="/support-tools" _hover={{ color: "teal.300" }} tabIndex="0" aria-label="Support Tools">
-          <Text fontSize="xl" fontWeight="bold" display={isCollapsed ? "none" : "block"}>
-            <FaTools /> Support Tools
-          </Text>
+          <HStack>
+            <FaTools />
+            <Text fontSize="xl" fontWeight="bold" display={isCollapsed ? "none" : "block"}>
+              Support Tools
+            </Text>
+          </HStack>
         </Link>
         <Link to="/work-assistant" _hover={{ color: "teal.300" }} tabIndex="0" aria-label="Work Assistant">
-          <Text fontSize="xl" fontWeight="bold" display={isCollapsed ? "none" : "block"}>
-            <FaTasks /> Work Assistant
-          </Text>
+          <HStack>
+            <FaTasks />
+            <Text fontSize="xl" fontWeight="bold" display={isCollapsed ? "none" : "block"}>
+              Work Assistant
+            </Text>
+          </HStack>
         </Link>
         <Link to="/learning-assistant" _hover={{ color: "teal.300" }} tabIndex="0" aria-label="Learning Assistant">
-          <Text fontSize="xl" fontWeight="bold" display={isCollapsed ? "none" : "block"}>
-            <FaBook /> Learning Assistant
-          </Text>
+          <HStack>
+            <FaBook />
+            <Text fontSize="xl" fontWeight="bold" display={isCollapsed ? "none" : "block"}>
+              Learning Assistant
+            </Text>
+          </HStack>
         </Link>
         <Link to="/recommendations" _hover={{ color: "teal.300" }} tabIndex="0" aria-label="Recommendations">
-          <Text fontSize="xl" fontWeight="bold" display={isCollapsed ? "none" : "block"}>
-            <FaLightbulb /> Recommendations
-          </Text>
+          <HStack>
+            <FaLightbulb />
+            <Text fontSize="xl" fontWeight="bold" display={isCollapsed ? "none" : "block"}>
+              Recommendations
+            </Text>
+          </HStack>
         </Link>
         <Link to="/blog" _hover={{ color: "teal.300" }} tabIndex="0" aria-label="Blog">
-          <Text fontSize="xl" fontWeight="bold" display={isCollapsed ? "none" : "block"}>
-            <FaComments /> Blog
-          </Text>
+          <HStack>
+            <FaComments />
+            <Text fontSize="xl" fontWeight="bold" display={isCollapsed ? "none" : "block"}>
+              Blog
+            </Text>
+          </HStack>
         </Link>
         <Link to="/personal-development" _hover={{ color: "teal.300" }} tabIndex="0" aria-label="Personal Development">
-          <Text fontSize="xl" fontWeight="bold" display={isCollapsed ? "none" : "block"}>
-            <FaUser /> Personal Development
-          </Text>
+          <HStack>
+            <FaUser />
+            <Text fontSize="xl" fontWeight="bold" display={isCollapsed ? "none" : "block"}>
+              Personal Development
+            </Text>
+          </HStack>
         </Link>
         <Link to="/performance-metrics" _hover={{ color: "teal.300" }} tabIndex="0" aria-label="Performance Metrics">
-          <Text fontSize="xl" fontWeight="bold" display={isCollapsed ? "none" : "block"}>
-            <FaChartLine /> Performance
-          </Text>
+          <HStack>
+            <FaChartLine />
+            <Text fontSize="xl" fontWeight="bold" display={isCollapsed ? "none" : "block"}>
+              Performance
+            </Text>
+          </HStack>
         </Link>
         <Link to="/task-management" _hover={{ color: "teal.300" }} tabIndex="0" aria-label="Task Management">
-          <Text fontSize="xl" fontWeight="bold" display={isCollapsed ? "none" : "block"}>
-            <FaTasks /> Task Management
-          </Text>
+          <HStack>
+            <FaTasks />
+            <Text fontSize="xl" fontWeight="bold" display={isCollapsed ? "none" : "block"}>
+              Task Management
+            </Text>
+          </HStack>
         </Link>
       </VStack>
     </Box>

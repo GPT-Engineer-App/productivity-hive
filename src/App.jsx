@@ -11,6 +11,7 @@ import FocusMusic from "./pages/FocusMusic.jsx";
 import Modes from "./pages/Modes.jsx";
 import PersonalDevelopment from "./pages/PersonalDevelopment.jsx";
 import PerformanceMetrics from "./pages/PerformanceMetrics.jsx";
+import ChallengerMode from "./pages/ChallengerMode.jsx";
 import AssessmentTests from "./pages/AssessmentTests.jsx";
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
             <Route path="/distraction-blocker" element={<DistractionBlocker />} />
             <Route path="/task-prioritization" element={<TaskPrioritization />} />
             <Route path="/focus-music" element={<FocusMusic />} />
+            <Route path="/challenger-mode" element={<ChallengerMode />} />
           </Routes>
         </Box>
       </Box>

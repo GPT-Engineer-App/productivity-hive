@@ -116,6 +116,14 @@ function Sidebar() {
             </Text>
           </HStack>
         </Link>
+        <Link to="/challenger-mode" _hover={{ color: "teal.300" }} tabIndex="0" aria-label="Challenger Mode">
+          <HStack>
+            <FaTasks />
+            <Text fontSize="xl" fontWeight="bold" display={isCollapsed ? "none" : "block"}>
+              Challenger Mode
+            </Text>
+          </HStack>
+        </Link>
         <Link to="/chatbot" _hover={{ color: "teal.300" }} tabIndex="0" aria-label="Chatbot">
           <HStack>
             <FaRobot />

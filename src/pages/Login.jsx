@@ -11,6 +11,7 @@ function Login() {
   const handleLogin = () => {
     if (username === "admin" && password === "password") {
       localStorage.setItem("isAuthenticated", "true");
+      localStorage.setItem("isAuthenticated", "true");
       navigate("/dashboard");
     } else {
       toast({

@@ -1,4 +1,5 @@
 import { Container, VStack, HStack, Box, Text, Heading, IconButton, Image, Progress, SimpleGrid, Divider, Input, InputGroup, InputLeftElement, Button, useBreakpointValue } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 import { FaChartLine, FaTasks, FaUser, FaBell, FaCog, FaSearch, FaWater, FaRunning, FaEye, FaWind, FaVolumeUp, FaLightbulb, FaBrain, FaComments, FaClock } from "react-icons/fa";
 
 const Index = () => {
@@ -8,9 +9,16 @@ const Index = () => {
         {/* Header */}
         <HStack justifyContent="space-between" alignItems="center">
           <HStack spacing={4} w="full" justifyContent="space-between">
-            <Heading as="h1" size="lg">
-              <Image src="path/to/company-logo.png" alt="Company Logo" boxSize="40px" />
-            </Heading>
+            <HStack spacing={4}>
+              <Link to="/" _hover={{ color: "teal.300" }} tabIndex="0" aria-label="Dashboard">
+                <Text fontSize="xl" fontWeight="bold">
+                  Dashboard
+                </Text>
+              </Link>
+              <Heading as="h1" size="lg">
+                <Image src="path/to/company-logo.png" alt="Company Logo" boxSize="40px" />
+              </Heading>
+            </HStack>
             <InputGroup w="40%" mx="auto">
               <InputLeftElement pointerEvents="none" children={<FaSearch />} />
               <Input type="text" placeholder="Search..." />

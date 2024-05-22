@@ -13,6 +13,7 @@ import PersonalDevelopment from "./pages/PersonalDevelopment.jsx";
 import PerformanceMetrics from "./pages/PerformanceMetrics.jsx";
 import ChallengerMode from "./pages/ChallengerMode.jsx";
 import AssessmentTests from "./pages/AssessmentTests.jsx";
+import MotivationalQuotes from "./pages/MotivationalQuotes.jsx";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
             <Route path="/task-prioritization" element={<TaskPrioritization />} />
             <Route path="/focus-music" element={<FocusMusic />} />
             <Route path="/challenger-mode" element={<ChallengerMode />} />
+            <Route path="/motivational-quotes" element={<MotivationalQuotes />} />
           </Routes>
         </Box>
       </Box>

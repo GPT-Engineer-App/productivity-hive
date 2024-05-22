@@ -1,10 +1,10 @@
-import { Container, VStack, HStack, Box, Text, Heading, IconButton, Image, Progress, SimpleGrid, Divider, Input, InputGroup, InputLeftElement, Button } from "@chakra-ui/react";
+import { Container, VStack, HStack, Box, Text, Heading, IconButton, Image, Progress, SimpleGrid, Divider, Input, InputGroup, InputLeftElement, Button, useBreakpointValue } from "@chakra-ui/react";
 import { FaChartLine, FaTasks, FaUser, FaBell, FaCog, FaSearch, FaWater, FaRunning, FaEye, FaWind, FaVolumeUp, FaLightbulb, FaBrain, FaComments, FaClock } from "react-icons/fa";
 
 const Index = () => {
   return (
     <Container maxW="container.xl" p={4}>
-      <VStack spacing={6} align="stretch">
+      <VStack spacing={6} align="stretch" w={useBreakpointValue({ base: "100%", md: "calc(100% - 250px)" })} ml={useBreakpointValue({ base: "0", md: "250px" })}>
         {/* Header */}
         <HStack justifyContent="space-between" alignItems="center">
           <HStack spacing={4} w="full" justifyContent="space-between">

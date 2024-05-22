@@ -26,16 +26,16 @@ function Modes() {
   return (
     <Box p={4} overflowY="auto" maxH="100vh" overflowX="hidden" bg={getBackgroundColor(selectedMode)}>
       <Select placeholder="Select mode" mt={2} colorScheme="teal" onChange={handleModeChange}>
-        <option value="calm" style={{ backgroundColor: "#B2F5EA" }}>
+        <option value="calm" style={{ backgroundColor: "blue.100" }}>
           Calm
         </option>
-        <option value="focused" style={{ backgroundColor: "#81E6D9" }}>
+        <option value="focused" style={{ backgroundColor: "green.100" }}>
           Focused
         </option>
-        <option value="competitive" style={{ backgroundColor: "#4FD1C5" }}>
+        <option value="competitive" style={{ backgroundColor: "red.100" }}>
           Competitive
         </option>
-        <option value="wise" style={{ backgroundColor: "#38B2AC" }}>
+        <option value="wise" style={{ backgroundColor: "purple.100" }}>
           Wise
         </option>
       </Select>

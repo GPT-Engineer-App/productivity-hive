@@ -1,7 +1,25 @@
-import { Container, VStack, HStack, Box, Text, Heading, IconButton, Image, Progress, SimpleGrid, Divider, Input, InputGroup, InputLeftElement, Button, useBreakpointValue, Select } from "@chakra-ui/react";
+import { Container, VStack, HStack, Box, Text, Heading, IconButton, Image, Progress, SimpleGrid, Divider, Input, InputGroup, InputLeftElement, Button, useBreakpointValue, Select, useColorModeValue } from "@chakra-ui/react";
+import { useState } from "react";
 import { FaChartLine, FaTasks, FaUser, FaBell, FaCog, FaSearch, FaWater, FaRunning, FaEye, FaWind, FaVolumeUp, FaLightbulb, FaBrain, FaComments, FaClock, FaListAlt, FaRobot } from "react-icons/fa";
 
 const Index = () => {
+  const [selectedMode, setSelectedMode] = useState("");
+
+  const getBackgroundColor = (mode) => {
+    switch (mode) {
+      case "calm":
+        return "#B2F5EA";
+      case "focused":
+        return "#81E6D9";
+      case "competitive":
+        return "#4FD1C5";
+      case "wise":
+        return "#38B2AC";
+      default:
+        return useColorModeValue("white", "gray.800");
+    }
+  };
+
   return (
     <Container maxW="container.xl" p={4} overflowY="auto" maxH="100vh" overflowX="hidden">
       <VStack spacing={6} align="stretch" w="100%">
@@ -25,7 +43,7 @@ const Index = () => {
         {}
         <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={6}>
           {/* Productivity Stats */}
-          <Box p={4} borderWidth="1px" borderRadius="lg">
+          <Box p={4} borderWidth="1px" borderRadius="lg" bg={getBackgroundColor(selectedMode)}>
             <HStack justifyContent="space-between">
               <Heading as="h2" size="md">
                 Productivity
@@ -37,7 +55,7 @@ const Index = () => {
           </Box>
 
           {/* Tasks */}
-          <Box p={4} borderWidth="1px" borderRadius="lg">
+          <Box p={4} borderWidth="1px" borderRadius="lg" bg={getBackgroundColor(selectedMode)}>
             <HStack justifyContent="space-between">
               <Heading as="h2" size="md">
                 Tasks
@@ -49,7 +67,7 @@ const Index = () => {
           </Box>
 
           {/* Personal Development */}
-          <Box p={4} borderWidth="1px" borderRadius="lg">
+          <Box p={4} borderWidth="1px" borderRadius="lg" bg={getBackgroundColor(selectedMode)}>
             <HStack justifyContent="space-between">
               <Heading as="h2" size="md">
                 Personal Development
@@ -60,7 +78,7 @@ const Index = () => {
             <Progress value={50} size="lg" colorScheme="purple" mt={2} />
           </Box>
           {}
-          <Box p={4} borderWidth="1px" borderRadius="lg">
+          <Box p={4} borderWidth="1px" borderRadius="lg" bg={getBackgroundColor(selectedMode)}>
             <HStack justifyContent="space-between">
               <Heading as="h2" size="md">
                 Reminders
@@ -72,7 +90,7 @@ const Index = () => {
           </Box>
 
           {}
-          <Box p={4} borderWidth="1px" borderRadius="lg">
+          <Box p={4} borderWidth="1px" borderRadius="lg" bg={getBackgroundColor(selectedMode)}>
             <HStack justifyContent="space-between">
               <Heading as="h2" size="md">
                 Modes
@@ -80,7 +98,7 @@ const Index = () => {
               <FaListAlt />
             </HStack>
             <Text mt={2}>Select Mode:</Text>
-            <Select placeholder="Select mode" mt={2} colorScheme="teal">
+            <Select placeholder="Select mode" mt={2} colorScheme="teal" onChange={(e) => setSelectedMode(e.target.value)}>
               <option value="calm" style={{ backgroundColor: "#B2F5EA" }}>
                 Calm
               </option>
@@ -97,7 +115,7 @@ const Index = () => {
           </Box>
 
           {}
-          <Box p={4} borderWidth="1px" borderRadius="lg">
+          <Box p={4} borderWidth="1px" borderRadius="lg" bg={getBackgroundColor(selectedMode)}>
             <HStack justifyContent="space-between">
               <Heading as="h2" size="md">
                 Recommendations
@@ -109,7 +127,7 @@ const Index = () => {
           </Box>
 
           {}
-          <Box p={4} borderWidth="1px" borderRadius="lg">
+          <Box p={4} borderWidth="1px" borderRadius="lg" bg={getBackgroundColor(selectedMode)}>
             <HStack justifyContent="space-between">
               <Heading as="h2" size="md">
                 Chatbot
@@ -121,7 +139,7 @@ const Index = () => {
           </Box>
 
           {}
-          <Box p={4} borderWidth="1px" borderRadius="lg">
+          <Box p={4} borderWidth="1px" borderRadius="lg" bg={getBackgroundColor(selectedMode)}>
             <HStack justifyContent="space-between">
               <Heading as="h2" size="md">
                 Task Management

@@ -20,6 +20,11 @@ function Sidebar() {
     <Box as="nav" w={isCollapsed ? "60px" : "250px"} p="4" bg="gray.800" color="white" position="fixed" h="100vh" left="0" transition="width 0.3s">
       <IconButton icon={isCollapsed ? <FaBars /> : <FaTimes />} onClick={toggleSidebar} colorScheme="teal" variant="outline" aria-label="Toggle Sidebar" mb={4} tabIndex="0" />
       <VStack align="start" spacing="4">
+        <Link to="/" _hover={{ color: "teal.300" }} tabIndex="0" aria-label="Dashboard">
+          <Text fontSize="xl" fontWeight="bold" display={isCollapsed ? "none" : "block"}>
+            Dashboard
+          </Text>
+        </Link>
         <Link to="/reminders" _hover={{ color: "teal.300" }} tabIndex="0" aria-label="Reminders">
           <Text fontSize="xl" fontWeight="bold" display={isCollapsed ? "none" : "block"}>
             Reminders

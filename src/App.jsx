@@ -5,6 +5,7 @@ import Login from "./pages/Login.jsx";
 import Reminders from "./pages/Reminders.jsx";
 import Chatbot from "./pages/Chatbot.jsx";
 import Sidebar from "./components/Sidebar.jsx";
+import Widgets from "./pages/Widgets.jsx";
 import Modes from "./pages/Modes.jsx";
 import PersonalDevelopment from "./pages/PersonalDevelopment.jsx";
 import PerformanceMetrics from "./pages/PerformanceMetrics.jsx";
@@ -23,6 +24,7 @@ function App() {
             <Route path="/personal-development" element={<PersonalDevelopment />} />
             <Route path="/performance-metrics" element={<PerformanceMetrics />} />
             <Route path="/chatbot" element={<Chatbot />} />
+            <Route path="/widgets" element={<Widgets />} />
           </Routes>
         </Box>
       </Box>

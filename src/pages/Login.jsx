@@ -11,7 +11,7 @@ function Login() {
   const handleLogin = () => {
     if (username === "berk" && password === "1234") {
       localStorage.setItem("isAuthenticated", "true");
-      navigate("/dashboard");
+      navigate("/dashboard", { replace: true });
     } else {
       toast({
         title: "Authentication failed.",

@@ -1,5 +1,5 @@
 import { Container, VStack, HStack, Box, Text, Heading, IconButton, Image, Progress, SimpleGrid, Divider, Input, InputGroup, InputLeftElement, Button, useBreakpointValue } from "@chakra-ui/react";
-import { FaChartLine, FaTasks, FaUser, FaBell, FaCog, FaSearch, FaWater, FaRunning, FaEye, FaWind, FaVolumeUp, FaLightbulb, FaBrain, FaComments, FaClock } from "react-icons/fa";
+import { FaChartLine, FaTasks, FaUser, FaBell, FaCog, FaSearch, FaWater, FaRunning, FaEye, FaWind, FaVolumeUp, FaLightbulb, FaBrain, FaComments, FaClock, FaListAlt, FaRobot } from "react-icons/fa";
 
 const Index = () => {
   return (
@@ -58,6 +58,65 @@ const Index = () => {
             </HStack>
             <Text mt={2}>Training Progress</Text>
             <Progress value={50} size="lg" colorScheme="purple" mt={2} />
+          </Box>
+          {}
+          <Box p={4} borderWidth="1px" borderRadius="lg">
+            <HStack justifyContent="space-between">
+              <Heading as="h2" size="md">
+                Reminders
+              </Heading>
+              <FaBell />
+            </HStack>
+            <Text mt={2}>Upcoming Reminders</Text>
+            <Progress value={70} size="lg" colorScheme="yellow" mt={2} />
+          </Box>
+
+          {}
+          <Box p={4} borderWidth="1px" borderRadius="lg">
+            <HStack justifyContent="space-between">
+              <Heading as="h2" size="md">
+                Modes
+              </Heading>
+              <FaListAlt />
+            </HStack>
+            <Text mt={2}>Current Mode: Focused</Text>
+            <Progress value={90} size="lg" colorScheme="teal" mt={2} />
+          </Box>
+
+          {}
+          <Box p={4} borderWidth="1px" borderRadius="lg">
+            <HStack justifyContent="space-between">
+              <Heading as="h2" size="md">
+                Recommendations
+              </Heading>
+              <FaLightbulb />
+            </HStack>
+            <Text mt={2}>New Recommendations</Text>
+            <Progress value={50} size="lg" colorScheme="orange" mt={2} />
+          </Box>
+
+          {}
+          <Box p={4} borderWidth="1px" borderRadius="lg">
+            <HStack justifyContent="space-between">
+              <Heading as="h2" size="md">
+                Chatbot
+              </Heading>
+              <FaRobot />
+            </HStack>
+            <Text mt={2}>Chatbot Interactions</Text>
+            <Progress value={40} size="lg" colorScheme="purple" mt={2} />
+          </Box>
+
+          {}
+          <Box p={4} borderWidth="1px" borderRadius="lg">
+            <HStack justifyContent="space-between">
+              <Heading as="h2" size="md">
+                Task Management
+              </Heading>
+              <FaTasks />
+            </HStack>
+            <Text mt={2}>Tasks Completed</Text>
+            <Progress value={75} size="lg" colorScheme="blue" mt={2} />
           </Box>
         </SimpleGrid>
 

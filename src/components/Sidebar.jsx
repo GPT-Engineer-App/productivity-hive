@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { FaTachometerAlt, FaBell, FaListAlt, FaTools, FaUser, FaBook, FaChartLine, FaTasks, FaLightbulb, FaComments, FaRobot, FaPen, FaWind, FaBrain, FaVolumeUp } from "react-icons/fa";
+import { FaTachometerAlt, FaBell, FaListAlt, FaTools, FaUser, FaBook, FaChartLine, FaTasks, FaLightbulb, FaComments, FaRobot, FaPen, FaWind, FaBrain, FaVolumeUp, FaClock, FaEye, FaMusic } from "react-icons/fa";
 
 function Sidebar() {
   const [isCollapsed, setIsCollapsed] = useState(false);
@@ -41,6 +41,38 @@ function Sidebar() {
             <FaListAlt />
             <Text fontSize="xl" fontWeight="bold" display={isCollapsed ? "none" : "block"}>
               Modes
+            </Text>
+          </HStack>
+        </Link>
+        <Link to="/pomodoro-timer" _hover={{ color: "teal.300" }} tabIndex="0" aria-label="Pomodoro Timer">
+          <HStack>
+            <FaClock />
+            <Text fontSize="xl" fontWeight="bold" display={isCollapsed ? "none" : "block"}>
+              Pomodoro Timer
+            </Text>
+          </HStack>
+        </Link>
+        <Link to="/distraction-blocker" _hover={{ color: "teal.300" }} tabIndex="0" aria-label="Distraction Blocker">
+          <HStack>
+            <FaEye />
+            <Text fontSize="xl" fontWeight="bold" display={isCollapsed ? "none" : "block"}>
+              Distraction Blocker
+            </Text>
+          </HStack>
+        </Link>
+        <Link to="/task-prioritization" _hover={{ color: "teal.300" }} tabIndex="0" aria-label="Task Prioritization">
+          <HStack>
+            <FaListAlt />
+            <Text fontSize="xl" fontWeight="bold" display={isCollapsed ? "none" : "block"}>
+              Task Prioritization
+            </Text>
+          </HStack>
+        </Link>
+        <Link to="/focus-music" _hover={{ color: "teal.300" }} tabIndex="0" aria-label="Focus Music">
+          <HStack>
+            <FaMusic />
+            <Text fontSize="xl" fontWeight="bold" display={isCollapsed ? "none" : "block"}>
+              Focus Music
             </Text>
           </HStack>
         </Link>

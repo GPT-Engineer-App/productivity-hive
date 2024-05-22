@@ -4,6 +4,10 @@ import Index from "./pages/Index.jsx";
 import Reminders from "./pages/Reminders.jsx";
 import Chatbot from "./pages/Chatbot.jsx";
 import Sidebar from "./components/Sidebar.jsx";
+import PomodoroTimer from "./pages/PomodoroTimer.jsx";
+import DistractionBlocker from "./pages/DistractionBlocker.jsx";
+import TaskPrioritization from "./pages/TaskPrioritization.jsx";
+import FocusMusic from "./pages/FocusMusic.jsx";
 import Modes from "./pages/Modes.jsx";
 import PersonalDevelopment from "./pages/PersonalDevelopment.jsx";
 import PerformanceMetrics from "./pages/PerformanceMetrics.jsx";
@@ -23,6 +27,10 @@ function App() {
             <Route path="/performance-metrics" element={<PerformanceMetrics />} />
             <Route path="/chatbot" element={<Chatbot />} />
             <Route path="/assessment-tests" element={<AssessmentTests />} />
+            <Route path="/pomodoro-timer" element={<PomodoroTimer />} />
+            <Route path="/distraction-blocker" element={<DistractionBlocker />} />
+            <Route path="/task-prioritization" element={<TaskPrioritization />} />
+            <Route path="/focus-music" element={<FocusMusic />} />
           </Routes>
         </Box>
       </Box>

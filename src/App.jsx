@@ -12,7 +12,7 @@ function App() {
     <Router>
       <Box display="flex">
         <Sidebar />
-        <Box flex="1" ml={{ base: "60px", md: "250px" }} transition="margin-left 0.3s" overflowY="auto" maxH="100vh" overflowY="auto">
+        <Box flex="1" ml={{ base: "60px", md: "250px" }} transition="margin-left 0.3s" overflowY="auto" maxH="100vh">
           <Routes>
             <Route exact path="/" element={<Index />} />
             <Route path="/reminders" element={<Reminders />} />

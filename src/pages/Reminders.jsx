@@ -2,7 +2,7 @@ import { Box, Button, Heading, List, ListItem, Text } from "@chakra-ui/react";
 
 function Reminders() {
   return (
-    <Box p={4} overflowY="auto" maxH="100vh">
+    <Box p={4} overflowY="auto" maxH="100vh" overflowX="hidden">
       <Heading as="h2" size="lg" mb={4}>
         Reminders
       </Heading>

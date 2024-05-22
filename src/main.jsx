@@ -20,7 +20,7 @@ const theme = extendTheme({
         color: "gray.800",
       },
       "::-webkit-scrollbar": {
-        width: "12px",
+        width: "16px",
       },
       "::-webkit-scrollbar-track": {
         background: "#f1f1f1",

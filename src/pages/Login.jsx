@@ -14,9 +14,7 @@ function Login() {
     if (username === "berk" && password === "1234") {
       localStorage.setItem("isAuthenticated", "true");
       setShowSuccess(true);
-      setTimeout(() => {
-        navigate("/dashboard");
-      }, 2000);
+      navigate("/dashboard");
     } else {
       toast({
         title: "Authentication failed.",

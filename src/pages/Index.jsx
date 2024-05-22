@@ -16,9 +16,9 @@ const Index = () => {
               <Input type="text" placeholder="Search..." />
             </InputGroup>
             <HStack spacing={4}>
-              <IconButton aria-label="Notifications" icon={<FaBell />} />
-              <IconButton aria-label="Settings" icon={<FaCog />} />
-              <Image borderRadius="full" boxSize="40px" src="https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxlbXBsb3llZSUyMHBvcnRyYWl0fGVufDB8fHx8MTcxNjMxODc0M3ww&ixlib=rb-4.0.3&q=80&w=1080" alt="Profile" />
+              <IconButton aria-label="Notifications" icon={<FaBell />} tabIndex="0" />
+              <IconButton aria-label="Settings" icon={<FaCog />} tabIndex="0" />
+              <Image borderRadius="full" boxSize="40px" src="https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxlbXBsb3llZSUyMHBvcnRyYWl0fGVufDB8fHx8MTcxNjMxODc0M3ww&ixlib=rb-4.0.3&q=80&w=1080" alt="Profile" tabIndex="0" aria-label="User Profile" />
             </HStack>
           </HStack>
         </HStack>

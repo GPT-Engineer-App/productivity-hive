@@ -5,10 +5,18 @@ function Modes() {
     <Box p={4}>
       <Tabs variant="soft-rounded" colorScheme="teal">
         <TabList>
-          <Tab>Calm</Tab>
-          <Tab>Focused</Tab>
-          <Tab>Competitive</Tab>
-          <Tab>Wise</Tab>
+          <Tab tabIndex="0" aria-label="Calm Mode">
+            Calm
+          </Tab>
+          <Tab tabIndex="0" aria-label="Focused Mode">
+            Focused
+          </Tab>
+          <Tab tabIndex="0" aria-label="Competitive Mode">
+            Competitive
+          </Tab>
+          <Tab tabIndex="0" aria-label="Wise Mode">
+            Wise
+          </Tab>
         </TabList>
         <TabPanels>
           <TabPanel>

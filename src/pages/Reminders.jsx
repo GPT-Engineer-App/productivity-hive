@@ -16,10 +16,10 @@ function Reminders() {
             <Box display="flex" justifyContent="space-between" alignItems="center">
               <Text>Reminder 1</Text>
               <Box>
-                <Button size="sm" colorScheme="green" mr={2}>
+                <Button size="sm" colorScheme="green" mr={2} tabIndex="0" aria-label="Mark as Done">
                   Done
                 </Button>
-                <Button size="sm" colorScheme="yellow">
+                <Button size="sm" colorScheme="yellow" tabIndex="0" aria-label="Snooze">
                   Snooze
                 </Button>
               </Box>
@@ -37,10 +37,10 @@ function Reminders() {
             <Box display="flex" justifyContent="space-between" alignItems="center">
               <Text>Overdue Reminder 1</Text>
               <Box>
-                <Button size="sm" colorScheme="green" mr={2}>
+                <Button size="sm" colorScheme="green" mr={2} tabIndex="0" aria-label="Mark as Done">
                   Done
                 </Button>
-                <Button size="sm" colorScheme="yellow">
+                <Button size="sm" colorScheme="yellow" tabIndex="0" aria-label="Snooze">
                   Snooze
                 </Button>
               </Box>
@@ -48,7 +48,7 @@ function Reminders() {
           </ListItem>
         </List>
       </Box>
-      <Button colorScheme="blue" size="lg">
+      <Button colorScheme="blue" size="lg" tabIndex="0" aria-label="Add New Reminder">
         Add New Reminder
       </Button>
     </Box>

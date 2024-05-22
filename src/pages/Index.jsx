@@ -1,4 +1,4 @@
-import { Container, VStack, HStack, Box, Text, Heading, IconButton, Image, Progress, SimpleGrid, Divider, Input, InputGroup, InputLeftElement, Button, useBreakpointValue, Select } from "@chakra-ui/react";
+import { Container, VStack, HStack, Box, Text, Heading, IconButton, Image, Progress, SimpleGrid, Divider, Input, InputGroup, InputLeftElement, Button, useBreakpointValue } from "@chakra-ui/react";
 import { FaChartLine, FaTasks, FaUser, FaBell, FaCog, FaSearch, FaWater, FaRunning, FaEye, FaWind, FaVolumeUp, FaLightbulb, FaBrain, FaComments, FaClock, FaListAlt, FaRobot } from "react-icons/fa";
 
 const Index = () => {
@@ -79,21 +79,8 @@ const Index = () => {
               </Heading>
               <FaListAlt />
             </HStack>
-            <Text mt={2}>Select Mode:</Text>
-            <Select placeholder="Select mode" mt={2} colorScheme="teal">
-              <option value="calm" style={{ backgroundColor: "#B2F5EA" }}>
-                Calm
-              </option>
-              <option value="focused" style={{ backgroundColor: "#81E6D9" }}>
-                Focused
-              </option>
-              <option value="competitive" style={{ backgroundColor: "#4FD1C5" }}>
-                Competitive
-              </option>
-              <option value="wise" style={{ backgroundColor: "#38B2AC" }}>
-                Wise
-              </option>
-            </Select>
+            <Text mt={2}>Current Mode: Focused</Text>
+            <Progress value={90} size="lg" colorScheme="teal" mt={2} />
           </Box>
 
           {}

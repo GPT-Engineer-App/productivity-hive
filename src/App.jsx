@@ -19,7 +19,7 @@ function App() {
         {isAuthenticated && <Sidebar />}
         <Box flex="1" ml={{ base: isAuthenticated ? "60px" : "0", md: isAuthenticated ? "250px" : "0" }} transition="margin-left 0.3s" overflowY="auto" maxH="100vh">
           <Routes>
-            <Route path="/" element={isAuthenticated ? <Navigate to="/dashboard" /> : <Login />} />
+            <Route exact path="/" element={isAuthenticated ? <Navigate to="/dashboard" /> : <Login />} />
             <Route path="/dashboard" element={isAuthenticated ? <Index /> : <Navigate to="/" />} />
             <Route path="/reminders" element={isAuthenticated ? <Reminders /> : <Navigate to="/" />} />
             <Route path="/modes" element={isAuthenticated ? <Modes /> : <Navigate to="/" />} />
@@ -27,7 +27,6 @@ function App() {
             <Route path="/performance-metrics" element={isAuthenticated ? <PerformanceMetrics /> : <Navigate to="/" />} />
             <Route path="/chatbot" element={isAuthenticated ? <Chatbot /> : <Navigate to="/" />} />
             <Route path="/widgets" element={isAuthenticated ? <Widgets /> : <Navigate to="/" />} />
-            <Route path="*" element={<Navigate to="/" />} />
           </Routes>
         </Box>
       </Box>

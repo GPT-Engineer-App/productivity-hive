@@ -9,7 +9,8 @@ function Login() {
   const [password, setPassword] = useState("");
 
   const handleLogin = () => {
-    if (username === "berk" && password === "1234") {
+    if (username === "berk" && password === "password") {
+      localStorage.setItem("isAuthenticated", "true");
       localStorage.setItem("isAuthenticated", "true");
       navigate("/dashboard");
     } else {

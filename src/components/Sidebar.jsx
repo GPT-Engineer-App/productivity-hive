@@ -4,7 +4,7 @@ import { FaTachometerAlt, FaBell, FaListAlt, FaTools, FaUser, FaBook, FaChartLin
 
 function Sidebar() {
   return (
-    <Box as="nav" w="250px" p="4" bg="gray.800" color="white" position="fixed" h="100vh">
+    <Box as="nav" w="250px" p="4" bg="gray.800" color="white" position="fixed" h="100vh" left="0">
       <VStack align="start" spacing="4">
         <Link to="/">
           <Text fontSize="xl" fontWeight="bold">

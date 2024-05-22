@@ -9,9 +9,9 @@ const Index = () => {
         <HStack justifyContent="space-between" alignItems="center">
           <HStack spacing={4} w="full" justifyContent="space-between">
             <Heading as="h1" size="lg">
-              Business Dashboard
+              <Image src="path/to/company-logo.png" alt="Company Logo" boxSize="40px" />
             </Heading>
-            <InputGroup w="40%">
+            <InputGroup w="40%" mx="auto">
               <InputLeftElement pointerEvents="none" children={<FaSearch />} />
               <Input type="text" placeholder="Search..." />
             </InputGroup>

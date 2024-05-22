@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { FaTachometerAlt, FaBell, FaListAlt, FaTools, FaUser, FaBook, FaChartLine, FaTasks, FaLightbulb, FaComments, FaRobot, FaPen } from "react-icons/fa";
+import { FaTachometerAlt, FaBell, FaListAlt, FaTools, FaUser, FaBook, FaChartLine, FaTasks, FaLightbulb, FaComments, FaRobot, FaPen, FaWind, FaBrain, FaVolumeUp } from "react-icons/fa";
 
 function Sidebar() {
   const [isCollapsed, setIsCollapsed] = useState(false);
@@ -113,6 +113,38 @@ function Sidebar() {
             <FaTasks />
             <Text fontSize="xl" fontWeight="bold" display={isCollapsed ? "none" : "block"}>
               Task Management
+            </Text>
+          </HStack>
+        </Link>
+        <Link to="/breathing-exercises" _hover={{ color: "teal.300" }} tabIndex="0" aria-label="Breathing Exercises">
+          <HStack>
+            <FaWind />
+            <Text fontSize="xl" fontWeight="bold" display={isCollapsed ? "none" : "block"}>
+              Breathing Exercises
+            </Text>
+          </HStack>
+        </Link>
+        <Link to="/meditation-sessions" _hover={{ color: "teal.300" }} tabIndex="0" aria-label="Meditation Sessions">
+          <HStack>
+            <FaBrain />
+            <Text fontSize="xl" fontWeight="bold" display={isCollapsed ? "none" : "block"}>
+              Meditation Sessions
+            </Text>
+          </HStack>
+        </Link>
+        <Link to="/soothing-music" _hover={{ color: "teal.300" }} tabIndex="0" aria-label="Soothing Music">
+          <HStack>
+            <FaVolumeUp />
+            <Text fontSize="xl" fontWeight="bold" display={isCollapsed ? "none" : "block"}>
+              Soothing Music
+            </Text>
+          </HStack>
+        </Link>
+        <Link to="/stress-relief-tips" _hover={{ color: "teal.300" }} tabIndex="0" aria-label="Stress Relief Tips">
+          <HStack>
+            <FaLightbulb />
+            <Text fontSize="xl" fontWeight="bold" display={isCollapsed ? "none" : "block"}>
+              Stress Relief Tips
             </Text>
           </HStack>
         </Link>

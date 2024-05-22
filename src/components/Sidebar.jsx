@@ -36,10 +36,10 @@ function Sidebar() {
             </Text>
           </HStack>
         </Link>
-        <Link to="/modes" _hover={{ color: "blue.300" }} tabIndex="0" aria-label="Modes">
+        <Link to="/modes" _hover={{ color: "teal.300" }} tabIndex="0" aria-label="Modes">
           <HStack>
             <FaListAlt />
-            <Text fontSize="xl" fontWeight="bold" display={isCollapsed ? "none" : "block"} color="blue.500">
+            <Text fontSize="xl" fontWeight="bold" display={isCollapsed ? "none" : "block"}>
               Modes
             </Text>
           </HStack>

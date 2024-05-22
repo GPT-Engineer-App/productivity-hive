@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { FaTachometerAlt, FaBell, FaListAlt, FaTools, FaUser, FaBook, FaChartLine, FaTasks, FaLightbulb, FaComments, FaRobot } from "react-icons/fa";
+import { FaTachometerAlt, FaBell, FaListAlt, FaTools, FaUser, FaBook, FaChartLine, FaTasks, FaLightbulb, FaComments, FaRobot, FaPen } from "react-icons/fa";
 
 function Sidebar() {
   const [isCollapsed, setIsCollapsed] = useState(false);

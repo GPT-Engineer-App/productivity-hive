@@ -7,6 +7,7 @@ import Sidebar from "./components/Sidebar.jsx";
 import Modes from "./pages/Modes.jsx";
 import PersonalDevelopment from "./pages/PersonalDevelopment.jsx";
 import PerformanceMetrics from "./pages/PerformanceMetrics.jsx";
+import AssessmentTests from "./pages/AssessmentTests.jsx";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path="/personal-development" element={<PersonalDevelopment />} />
             <Route path="/performance-metrics" element={<PerformanceMetrics />} />
             <Route path="/chatbot" element={<Chatbot />} />
+            <Route path="/assessment-tests" element={<AssessmentTests />} />
           </Routes>
         </Box>
       </Box>

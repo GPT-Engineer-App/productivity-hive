@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { FaTachometerAlt, FaBell, FaListAlt, FaTools, FaUser, FaBook, FaChartLine, FaTasks, FaLightbulb, FaComments, FaRobot } from "react-icons/fa";
+import { FaTachometerAlt, FaBell, FaListAlt, FaTools, FaUser, FaBook, FaChartLine, FaTasks, FaLightbulb, FaComments } from "react-icons/fa";
 
 function Sidebar() {
   const [isCollapsed, setIsCollapsed] = useState(false);
@@ -81,14 +81,6 @@ function Sidebar() {
             <FaComments />
             <Text fontSize="xl" fontWeight="bold" display={isCollapsed ? "none" : "block"}>
               Blog
-            </Text>
-          </HStack>
-        </Link>
-        <Link to="/chatbot" _hover={{ color: "teal.300" }} tabIndex="0" aria-label="Chatbot">
-          <HStack>
-            <FaRobot />
-            <Text fontSize="xl" fontWeight="bold" display={isCollapsed ? "none" : "block"}>
-              Chatbot
             </Text>
           </HStack>
         </Link>

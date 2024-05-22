@@ -1,5 +1,5 @@
 import { Box, Checkbox, Heading, VStack, Button, HStack } from "@chakra-ui/react";
-import { FaCloudSun, FaNewspaper, FaCalendarAlt, FaTasks } from "react-icons/fa";
+import { FaCloudSun, FaNewspaper, FaCalendarAlt, FaTasks, FaBell, FaListAlt, FaRobot } from "react-icons/fa";
 import { useState } from "react";
 
 const Widgets = () => {
@@ -9,7 +9,7 @@ const Widgets = () => {
     setSelectedWidgets((prev) => (prev.includes(widget) ? prev.filter((w) => w !== widget) : [...prev, widget]));
   };
 
-  const widgets = ["Weather", "News", "Calendar", "Tasks"];
+  const widgets = ["Weather", "News", "Calendar", "Tasks", "Reminders", "Modes", "Chatbot", "Task Management"];
 
   return (
     <Box p={4}>
@@ -31,8 +31,20 @@ const Widgets = () => {
         <Button leftIcon={<FaCalendarAlt />} colorScheme="teal" variant="solid">
           Calendar
         </Button>
-        <Button leftIcon={<FaTasks />} colorScheme="teal" variant="solid">
+        <Button leftIcon={<FaTasks />} colorScheme="teal" variant="solid" onClick={() => handleCheckboxChange("Tasks")}>
           Tasks
+        </Button>
+        <Button leftIcon={<FaBell />} colorScheme="teal" variant="solid" onClick={() => handleCheckboxChange("Reminders")}>
+          Reminders
+        </Button>
+        <Button leftIcon={<FaListAlt />} colorScheme="teal" variant="solid" onClick={() => handleCheckboxChange("Modes")}>
+          Modes
+        </Button>
+        <Button leftIcon={<FaRobot />} colorScheme="teal" variant="solid" onClick={() => handleCheckboxChange("Chatbot")}>
+          Chatbot
+        </Button>
+        <Button leftIcon={<FaTasks />} colorScheme="teal" variant="solid" onClick={() => handleCheckboxChange("Task Management")}>
+          Task Management
         </Button>
       </HStack>
     </Box>

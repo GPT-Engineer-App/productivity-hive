@@ -1,4 +1,5 @@
 import { Box, VStack, Text, IconButton } from "@chakra-ui/react";
+import { useEffect } from "react";
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
@@ -10,6 +11,10 @@ function Sidebar() {
   const toggleSidebar = () => {
     setIsCollapsed(!isCollapsed);
   };
+
+  useEffect(() => {
+    document.body.style.marginLeft = isCollapsed ? "60px" : "250px";
+  }, [isCollapsed]);
 
   return (
     <Box as="nav" w={isCollapsed ? "60px" : "250px"} p="4" bg="gray.800" color="white" position="fixed" h="100vh" left="0" transition="width 0.3s">

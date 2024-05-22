@@ -1,4 +1,5 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import { Box } from "@chakra-ui/react";
 import Index from "./pages/Index.jsx";
 import Reminders from "./pages/Reminders.jsx";
 import Sidebar from "./components/Sidebar.jsx";
@@ -9,14 +10,18 @@ import PerformanceMetrics from "./pages/PerformanceMetrics.jsx";
 function App() {
   return (
     <Router>
-      <Sidebar />
-      <Routes>
-        <Route exact path="/" element={<Index />} />
-        <Route path="/reminders" element={<Reminders />} />
-        <Route path="/modes" element={<Modes />} />
-        <Route path="/personal-development" element={<PersonalDevelopment />} />
-        <Route path="/performance-metrics" element={<PerformanceMetrics />} />
-      </Routes>
+      <Box display="flex">
+        <Sidebar />
+        <Box flex="1" ml={{ base: "60px", md: "250px" }} transition="margin-left 0.3s">
+          <Routes>
+            <Route exact path="/" element={<Index />} />
+            <Route path="/reminders" element={<Reminders />} />
+            <Route path="/modes" element={<Modes />} />
+            <Route path="/personal-development" element={<PersonalDevelopment />} />
+            <Route path="/performance-metrics" element={<PerformanceMetrics />} />
+          </Routes>
+        </Box>
+      </Box>
     </Router>
   );
 }

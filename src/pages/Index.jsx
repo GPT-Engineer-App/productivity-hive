@@ -4,7 +4,7 @@ import { FaChartLine, FaTasks, FaUser, FaBell, FaCog, FaSearch, FaWater, FaRunni
 const Index = () => {
   return (
     <Container maxW="container.xl" p={4}>
-      <VStack spacing={6} align="stretch" w={useBreakpointValue({ base: "100%", md: "calc(100% - 250px)" })} ml={useBreakpointValue({ base: "0", md: "250px" })}>
+      <VStack spacing={6} align="stretch" w="100%">
         {/* Header */}
         <HStack justifyContent="space-between" alignItems="center">
           <HStack spacing={4} w="full" justifyContent="space-between">

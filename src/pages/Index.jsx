@@ -1,10 +1,7 @@
 import { Container, VStack, HStack, Box, Text, Heading, IconButton, Image, Progress, SimpleGrid, Divider, Input, InputGroup, InputLeftElement, Button, useBreakpointValue, Select } from "@chakra-ui/react";
-import { useState } from "react";
 import { FaChartLine, FaTasks, FaUser, FaBell, FaCog, FaSearch, FaWater, FaRunning, FaEye, FaWind, FaVolumeUp, FaLightbulb, FaBrain, FaComments, FaClock, FaListAlt, FaRobot } from "react-icons/fa";
 
 const Index = () => {
-  const [selectedWidgets, setSelectedWidgets] = useState(["Weather", "News", "Calendar", "Tasks"]);
-
   return (
     <Container maxW="container.xl" p={4} overflowY="auto" maxH="100vh" overflowX="hidden">
       <VStack spacing={6} align="stretch" w="100%">
@@ -25,71 +22,8 @@ const Index = () => {
             </HStack>
           </HStack>
         </HStack>
+        {}
         <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={6}>
-          {selectedWidgets.includes("Reminders") && (
-            <Box p={4} borderWidth="1px" borderRadius="lg">
-              <HStack justifyContent="space-between">
-                <Heading as="h2" size="md">
-                  Reminders
-                </Heading>
-                <FaBell />
-              </HStack>
-              <Text mt={2}>Upcoming Reminders</Text>
-              <Progress value={70} size="lg" colorScheme="yellow" mt={2} />
-            </Box>
-          )}
-
-          {selectedWidgets.includes("Modes") && (
-            <Box p={4} borderWidth="1px" borderRadius="lg">
-              <HStack justifyContent="space-between">
-                <Heading as="h2" size="md">
-                  Modes
-                </Heading>
-                <FaListAlt />
-              </HStack>
-              <Text mt={2}>Select Mode:</Text>
-              <Select placeholder="Select mode" mt={2} colorScheme="teal">
-                <option value="calm" style={{ backgroundColor: "#B2F5EA" }}>
-                  Calm
-                </option>
-                <option value="focused" style={{ backgroundColor: "#81E6D9" }}>
-                  Focused
-                </option>
-                <option value="competitive" style={{ backgroundColor: "#4FD1C5" }}>
-                  Competitive
-                </option>
-                <option value="wise" style={{ backgroundColor: "#38B2AC" }}>
-                  Wise
-                </option>
-              </Select>
-            </Box>
-          )}
-
-          {selectedWidgets.includes("Chatbot") && (
-            <Box p={4} borderWidth="1px" borderRadius="lg">
-              <HStack justifyContent="space-between">
-                <Heading as="h2" size="md">
-                  Chatbot
-                </Heading>
-                <FaRobot />
-              </HStack>
-              <Text mt={2}>Chatbot Interactions</Text>
-              <Progress value={40} size="lg" colorScheme="purple" mt={2} />
-            </Box>
-          )}
-
-          {selectedWidgets.includes("Task Management") && (
-            <Box p={4} borderWidth="1px" borderRadius="lg">
-              <HStack justifyContent="space-between">
-                <Heading as="h2" size="md">
-                  Task Management
-                </Heading>
-                <FaTasks />
-              </HStack>
-              <Text mt={2}>Tasks Completed</Text>
-              <Progress value={75} size="lg" colorScheme="blue" mt={2} />
-            </Box>
-          )}
           {/* Productivity Stats */}
           <Box p={4} borderWidth="1px" borderRadius="lg">
             <HStack justifyContent="space-between">
@@ -125,6 +59,42 @@ const Index = () => {
             <Text mt={2}>Training Progress</Text>
             <Progress value={50} size="lg" colorScheme="purple" mt={2} />
           </Box>
+          {}
+          <Box p={4} borderWidth="1px" borderRadius="lg">
+            <HStack justifyContent="space-between">
+              <Heading as="h2" size="md">
+                Reminders
+              </Heading>
+              <FaBell />
+            </HStack>
+            <Text mt={2}>Upcoming Reminders</Text>
+            <Progress value={70} size="lg" colorScheme="yellow" mt={2} />
+          </Box>
+
+          {}
+          <Box p={4} borderWidth="1px" borderRadius="lg">
+            <HStack justifyContent="space-between">
+              <Heading as="h2" size="md">
+                Modes
+              </Heading>
+              <FaListAlt />
+            </HStack>
+            <Text mt={2}>Select Mode:</Text>
+            <Select placeholder="Select mode" mt={2} colorScheme="teal">
+              <option value="calm" style={{ backgroundColor: "#B2F5EA" }}>
+                Calm
+              </option>
+              <option value="focused" style={{ backgroundColor: "#81E6D9" }}>
+                Focused
+              </option>
+              <option value="competitive" style={{ backgroundColor: "#4FD1C5" }}>
+                Competitive
+              </option>
+              <option value="wise" style={{ backgroundColor: "#38B2AC" }}>
+                Wise
+              </option>
+            </Select>
+          </Box>
 
           {}
           <Box p={4} borderWidth="1px" borderRadius="lg">
@@ -136,6 +106,30 @@ const Index = () => {
             </HStack>
             <Text mt={2}>New Recommendations</Text>
             <Progress value={50} size="lg" colorScheme="orange" mt={2} />
+          </Box>
+
+          {}
+          <Box p={4} borderWidth="1px" borderRadius="lg">
+            <HStack justifyContent="space-between">
+              <Heading as="h2" size="md">
+                Chatbot
+              </Heading>
+              <FaRobot />
+            </HStack>
+            <Text mt={2}>Chatbot Interactions</Text>
+            <Progress value={40} size="lg" colorScheme="purple" mt={2} />
+          </Box>
+
+          {}
+          <Box p={4} borderWidth="1px" borderRadius="lg">
+            <HStack justifyContent="space-between">
+              <Heading as="h2" size="md">
+                Task Management
+              </Heading>
+              <FaTasks />
+            </HStack>
+            <Text mt={2}>Tasks Completed</Text>
+            <Progress value={75} size="lg" colorScheme="blue" mt={2} />
           </Box>
         </SimpleGrid>
 

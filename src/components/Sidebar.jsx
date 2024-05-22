@@ -116,14 +116,6 @@ function Sidebar() {
             </Text>
           </HStack>
         </Link>
-        <Link to="/widgets" _hover={{ color: "teal.300" }} tabIndex="0" aria-label="Widgets">
-          <HStack>
-            <FaTasks />
-            <Text fontSize="xl" fontWeight="bold" display={isCollapsed ? "none" : "block"}>
-              Widgets
-            </Text>
-          </HStack>
-        </Link>
       </VStack>
     </Box>
   );

@@ -1,45 +1,9 @@
-import { Tabs, TabList, TabPanels, Tab, TabPanel, Box, Select } from "@chakra-ui/react";
-import { useState } from "react";
+import { Tabs, TabList, TabPanels, Tab, TabPanel, Box } from "@chakra-ui/react";
 
 function Modes() {
-  const [selectedMode, setSelectedMode] = useState("");
-
-  const handleModeChange = (event) => {
-    setSelectedMode(event.target.value);
-  };
-
-  const getBackgroundColor = (mode) => {
-    switch (mode) {
-      case "calm":
-        return "blue.100";
-      case "focused":
-        return "green.100";
-      case "competitive":
-        return "red.100";
-      case "wise":
-        return "purple.100";
-      default:
-        return "white";
-    }
-  };
-
   return (
-    <Box p={4} overflowY="auto" maxH="100vh" overflowX="hidden" bg={getBackgroundColor(selectedMode)}>
-      <Select placeholder="Select mode" mt={2} colorScheme="teal" onChange={handleModeChange}>
-        <option value="calm" style={{ backgroundColor: "#B2F5EA" }}>
-          Calm
-        </option>
-        <option value="focused" style={{ backgroundColor: "#81E6D9" }}>
-          Focused
-        </option>
-        <option value="competitive" style={{ backgroundColor: "#4FD1C5" }}>
-          Competitive
-        </option>
-        <option value="wise" style={{ backgroundColor: "#38B2AC" }}>
-          Wise
-        </option>
-      </Select>
-      <Tabs variant="soft-rounded" colorScheme="teal" mt={4}>
+    <Box p={4} overflowY="auto" maxH="100vh" overflowX="hidden">
+      <Tabs variant="soft-rounded" colorScheme="teal">
         <TabList>
           <Tab tabIndex="0" aria-label="Calm Mode">
             Calm

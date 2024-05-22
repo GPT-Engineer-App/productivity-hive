@@ -3,7 +3,7 @@ import { FaChartLine, FaTasks, FaUser, FaBell, FaCog, FaSearch, FaWater, FaRunni
 
 const Index = () => {
   return (
-    <Container maxW="container.xl" p={4}>
+    <Container maxW="container.xl" p={4} overflowY="auto" maxH="100vh">
       <VStack spacing={6} align="stretch" w="100%">
         {/* Header */}
         <HStack justifyContent="space-between" alignItems="center">

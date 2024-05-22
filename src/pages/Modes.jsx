@@ -2,7 +2,7 @@ import { Tabs, TabList, TabPanels, Tab, TabPanel, Box } from "@chakra-ui/react";
 
 function Modes() {
   return (
-    <Box p={4}>
+    <Box p={4} overflowY="auto" maxH="100vh">
       <Tabs variant="soft-rounded" colorScheme="teal">
         <TabList>
           <Tab tabIndex="0" aria-label="Calm Mode">

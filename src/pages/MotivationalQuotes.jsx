@@ -24,7 +24,6 @@ const MotivationalQuotes = () => {
       <Text fontSize="xl" mb={4}>
         {quote}
       </Text>
-      <Text mt={4}>Kullanıcılara motivasyon sağlayacak alıntılar ve sözler gösterir. Günlük ilham kaynağı olarak kullanılabilir.</Text>
       <Button onClick={fetchQuote} colorScheme="teal" mr={3}>
         New Quote
       </Button>

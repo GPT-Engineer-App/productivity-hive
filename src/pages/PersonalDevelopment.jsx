@@ -8,6 +8,7 @@ function PersonalDevelopment() {
         Personal Development Tracking
       </Heading>
       <Text>Visual Progress Trackers and Personalized Recommendations will be displayed here.</Text>
+      <Text mt={4}>Kullanıcıların kişisel gelişimlerini takip etmelerine ve geliştirmelerine yardımcı olur. Eğitim materyalleri, kurslar ve ilerleme takip araçları sunar.</Text>
     </Box>
   );
 }

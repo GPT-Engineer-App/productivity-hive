@@ -7,6 +7,7 @@ function Reminders() {
         Reminders
       </Heading>
       <Box mb={6}>
+        <Text mb={4}>Bu bölümde, kullanıcıya yaklaşan hatırlatmalarını görüntüler. Kullanıcıların önemli etkinlikler ve görevler için zamanında bildirim almasını sağlar.</Text>
         <Heading as="h3" size="md" mb={2}>
           Upcoming Reminders
         </Heading>

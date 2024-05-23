@@ -9,6 +9,7 @@ function PerformanceMetrics() {
       </Heading>
       <Text>Interactive Dashboard, Task Management Tool, and other performance metrics will be displayed here.</Text>
       <Text mt={4}>Kullanıcının performansını ölçen ve analiz eden araçlar içerir. Verimlilik, tamamlanan görevler ve diğer performans metrikleri hakkında geri bildirim sağlar.</Text>
+      <Text mt={4}>Performance: Kullanıcının performansını ölçen ve analiz eden araçlar içerir. Verimlilik, tamamlanan görevler ve diğer performans metrikleri hakkında geri bildirim sağlar.</Text>
     </Box>
   );
 }

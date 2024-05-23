@@ -14,6 +14,11 @@ import PerformanceMetrics from "./pages/PerformanceMetrics.jsx";
 import ChallengerMode from "./pages/ChallengerMode.jsx";
 import AssessmentTests from "./pages/AssessmentTests.jsx";
 import MotivationalQuotes from "./pages/MotivationalQuotes.jsx";
+import TaskManagement from "./pages/TaskManagement.jsx";
+import BreathingExercises from "./pages/BreathingExercises.jsx";
+import MeditationSessions from "./pages/MeditationSessions.jsx";
+import SoothingMusic from "./pages/SoothingMusic.jsx";
+import StressReliefTips from "./pages/StressReliefTips.jsx";
 
 function App() {
   return (
@@ -35,6 +40,11 @@ function App() {
             <Route path="/focus-music" element={<FocusMusic />} />
             <Route path="/challenger-mode" element={<ChallengerMode />} />
             <Route path="/motivational-quotes" element={<MotivationalQuotes />} />
+            <Route path="/task-management" element={<TaskManagement />} />
+            <Route path="/breathing-exercises" element={<BreathingExercises />} />
+            <Route path="/meditation-sessions" element={<MeditationSessions />} />
+            <Route path="/soothing-music" element={<SoothingMusic />} />
+            <Route path="/stress-relief-tips" element={<StressReliefTips />} />
           </Routes>
         </Box>
       </Box>

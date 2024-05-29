@@ -4,7 +4,6 @@ function Modes() {
   return (
     <Box p={4} overflowY="auto" maxH="100vh" overflowX="hidden">
       <Text mb={4}>Çeşitli modları seçmek için kullanılan bu bölüm, kullanıcıya odaklanma, sakinleşme, zorluklarla başa çıkma ve bilgeliğe odaklanma gibi farklı modlar sunar.</Text>
-      <Text mb={4}>Çeşitli modları seçmek için kullanılan bu bölüm, kullanıcıya odaklanma, sakinleşme, zorluklarla başa çıkma ve bilgeliğe odaklanma gibi farklı modlar sunar.</Text>
       <Tabs variant="soft-rounded" colorScheme="teal">
         <TabList>
           <Tab tabIndex="0" aria-label="Calm Mode">

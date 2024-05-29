@@ -156,78 +156,7 @@ function Sidebar() {
             </Text>
           </HStack>
         </Link>
-        <Link to="/breathing-exercises" _hover={{ color: "teal.300" }} tabIndex="0" aria-label="Breathing Exercises">
-          <HStack>
-            <FaWind />
-            <Text fontSize="xl" fontWeight="bold" display={isCollapsed ? "none" : "block"}>
-              Breathing Exercises
-            </Text>
-          </HStack>
-        </Link>
-        <Link to="/meditation-sessions" _hover={{ color: "teal.300" }} tabIndex="0" aria-label="Meditation Sessions">
-          <HStack>
-            <FaBrain />
-            <Text fontSize="xl" fontWeight="bold" display={isCollapsed ? "none" : "block"}>
-              Meditation Sessions
-            </Text>
-          </HStack>
-        </Link>
-        <Link to="/soothing-music" _hover={{ color: "teal.300" }} tabIndex="0" aria-label="Soothing Music">
-          <HStack>
-            <FaVolumeUp />
-            <Text fontSize="xl" fontWeight="bold" display={isCollapsed ? "none" : "block"}>
-              Soothing Music
-            </Text>
-          </HStack>
-        </Link>
-        <Link to="/motivational-quotes" _hover={{ color: "teal.300" }} tabIndex="0" aria-label="Motivational Quotes">
-          <HStack>
-            <FaLightbulb />
-            <Text fontSize="xl" fontWeight="bold" display={isCollapsed ? "none" : "block"}>
-              Motivational Quotes
-            </Text>
-          </HStack>
-        </Link>
-        <Link to="/task-management" _hover={{ color: "teal.300" }} tabIndex="0" aria-label="Task Management">
-          <HStack>
-            <FaTasks />
-            <Text fontSize="xl" fontWeight="bold" display={isCollapsed ? "none" : "block"}>
-              Task Management
-            </Text>
-          </HStack>
-        </Link>
-        <Link to="/breathing-exercises" _hover={{ color: "teal.300" }} tabIndex="0" aria-label="Breathing Exercises">
-          <HStack>
-            <FaWind />
-            <Text fontSize="xl" fontWeight="bold" display={isCollapsed ? "none" : "block"}>
-              Breathing Exercises
-            </Text>
-          </HStack>
-        </Link>
-        <Link to="/meditation-sessions" _hover={{ color: "teal.300" }} tabIndex="0" aria-label="Meditation Sessions">
-          <HStack>
-            <FaBrain />
-            <Text fontSize="xl" fontWeight="bold" display={isCollapsed ? "none" : "block"}>
-              Meditation Sessions
-            </Text>
-          </HStack>
-        </Link>
-        <Link to="/soothing-music" _hover={{ color: "teal.300" }} tabIndex="0" aria-label="Soothing Music">
-          <HStack>
-            <FaVolumeUp />
-            <Text fontSize="xl" fontWeight="bold" display={isCollapsed ? "none" : "block"}>
-              Soothing Music
-            </Text>
-          </HStack>
-        </Link>
-        <Link to="/stress-relief-tips" _hover={{ color: "teal.300" }} tabIndex="0" aria-label="Stress Relief Tips">
-          <HStack>
-            <FaLightbulb />
-            <Text fontSize="xl" fontWeight="bold" display={isCollapsed ? "none" : "block"}>
-              Motivational Quotes
-            </Text>
-          </HStack>
-        </Link>
+
         <Link to="/stress-relief-tips" _hover={{ color: "teal.300" }} tabIndex="0" aria-label="Stress Relief Tips">
           <HStack>
             <FaLightbulb />
